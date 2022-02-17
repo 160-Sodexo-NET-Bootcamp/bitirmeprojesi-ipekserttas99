@@ -68,48 +68,61 @@
 #### Authorize kısmına tokenımızın başına Bearer ve bir boşluk bırakarak giriyoruz. Register ve Login endpointleri haricinde bütün endpointler authorize istiyor 🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/authorize.JPG)
 
-#### Tüm kategoriyi listeleme 
+#### Üye olma 🌺 Bilgilerimizi validasyona uygun girip execute ettiğimizde access token'ımız ve userid'miz dönecektir. 
+![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/register.JPG)
+#### Üye olduktan saniyeler içinde Hoşgeldiniz maili gelir;
+![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/ho%C5%9Fgeldiniz%20maili.JPG)
+
+#### Giriş yapma 🌺 Bilgilerimizi doğru girdiysek 'Giriş başarılı!' mesajı döner. 3 kez yanlış girdiysek hesabımız bloke olup silinir ve bize bilgilendirme maili gelir.
+![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/login%20bloke.JPG)
+![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/bloke%20maili.JPG)
+
+#### Hangfire dashboard'da mail atmak için kullandığımız Job'lar başarılı kısmında görünüyor; 
+![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/hangfire.JPG)
+
+
+#### Tüm kategoriyi listeleme 🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/T%C3%BCmkategorilisteleme.JPG)
 
-#### Kategori id'si ile listeleme
+#### Kategori id'si ile listeleme🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/%C4%B0dyeg%C3%B6rekategori%20listeleme.JPG)
 
-#### Kategori create etme
+#### Kategori create etme🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/kategori%20create.JPG)
 
-#### Kategori update etme
+#### Kategori update etme🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/kategori%20update.JPG)
 
-#### Kategori silme
+#### Kategori silme🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/kategori%20silme.JPG)
 
-#### Kullanıcının yaptığı teklifleri listeleme. ‼️ username'e gerek yoktu ancak bir controller'da 2 Get metodu olduğu için çalışması için parametre ekledim. ‼️
+#### Kullanıcının yaptığı teklifleri listeleme. 🌺 ‼️ username'e gerek yoktu ancak bir controller'da 2 Get metodu olduğu için çalışması için parametre ekledim. ‼️
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/kullan%C4%B1c%C4%B1n%C4%B1n%20yapt%C4%B1%C4%9F%C4%B1%20teklifler.JPG)
 
-#### Kullanıcının aldığı teklifleri listeleme
+#### Kullanıcının aldığı teklifleri listeleme🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/kullan%C4%B1c%C4%B1n%C4%B1n%20ald%C4%B1%C4%9F%C4%B1%20teklifler.JPG)
 
-#### Verilen teklifi kabul etme
+#### Verilen teklifi kabul etme🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/verilen%20teklifi%20kabul%20etme.JPG)
 
-#### Teklif yapma. Body'nin içindeki isOfferPercentage'ı true yapıp offeredPrice'ı da yüzdelik verirsek (örneğin 20 => %20) teklifler tablosuna fiyat üzerinden yüzde hesabı yaparak düşer. Aşağıda görüldüğü gibi teklifi yapılan ürün %30'u düşülerek tabloya kaydolmuştur.
+#### Teklif yapma 🌺 Body'nin içindeki isOfferPercentage'ı true yapıp offeredPrice'ı da yüzdelik verirsek (örneğin 20 => %20) teklifler tablosuna fiyat üzerinden yüzde hesabı yaparak düşer. Aşağıda görüldüğü gibi teklifi yapılan ürün %30'u düşülerek tabloya kaydolmuştur.
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/y%C3%BCzdelik%20teklif%20verme.JPG)
 
 #### Eğer Body'nin içindeki isOfferPercentage'ı false yapıp offeredPrice'ı verirsek teklifler tablosuna ne fiyat teklif ettiysek o düşer.
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/y%C3%BCzdeliksiz%20teklif%20verme.JPG)
 
-#### Verilen teklifin geri çekilmesi
+#### Verilen teklifin geri çekilmesi🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/teklif%20geri%20%C3%A7ekme.JPG)
 
 #### Eğer kullanıcı kendine ait olmayan teklifi silmek isterse şu şekilde hata verecektir; 
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/kendisine%20ait%20olmayan%20teklifi%20silme.JPG)
 
-#### Ürün ekleme
+#### Ürün ekleme🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/%C3%BCr%C3%BCn%20ekleme.JPG)
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/%C3%BCr%C3%BCn%20ekleme%202.JPG)
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/%C3%BCr%C3%BCn%20ekleme%203.JPG)
 
-#### Ürün satın alma
+#### Ürün satın alma🌺
 ![alt text](https://github.com/160-Sodexo-NET-Bootcamp/bitirmeprojesi-ipekserttas99/blob/main/MezuniyetProjesi/readme%20photos/%C3%BCr%C3%BCn%20sat%C4%B1n%20alma.JPG)
 
 #### Eğer satın alınmış bir ürünü satın almaya kalkarsak şöyle bir hata alırız;

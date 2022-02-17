@@ -107,7 +107,7 @@ namespace MezuniyetProjesi.Controllers
                         Color = product.Color,
                         CategoryId = product.CategoryId,
                         Description = product.Description,
-                        UserName = product.UserName,             //yeni update input'u oluşturdu price'ı yüzdelik üzerinden hesaplayarak set etti
+                        UserName = product.UserName,             //yeni update input'u oluşturdu price'ı verilen teklif fiyatından kabul etti
                         IsOfferable = true,
                         IsSold = false,
                         Name = product.Name,
